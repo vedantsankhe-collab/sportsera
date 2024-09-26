@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="createchannel.css">
+</head>
+<body>
+    <!-- Channel Creation Section -->
+<section id="create-channel">
+    <h2>Create Your Channel</h2>
+    <div class="form-container">
+        <form id="channel-form" onsubmit="handleSubmit(event)">
+            <div id="profile-picture-container">
+                <img id="profile-picture" src="default-profile-picture.jpg" alt="Profile Picture">
+                <input type="file" id="profile-picture-input" accept="image/*" onchange="previewImage(event)">
+                <button type="button" id="capture-picture-btn" onclick="capturePicture()">Capture Picture</button>
+            </div>
+            <label for="channel-name">Channel Name:</label>
+            <input type="text" id="channel-name" name="channel-name" required><br><br>
+            <label for="channel-description">Channel Description:</label>
+            <textarea id="channel-description" name="channel-description" required></textarea><br><br>
+            <button type="submit" id="create-channel-btn">Create Channel</button>
+            <script>
+                document.getElementById('create-channel-btn').onclick = function() {
+                    window.location.href = 'channel.html';                
+                };
+            </script>
+            </form>
+    </div>
+</section>
+
+<script src="createchannel.js"></script>
+</body>
+</html>

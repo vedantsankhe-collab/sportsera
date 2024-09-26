@@ -1,0 +1,45 @@
+/* CSS Code in styles.css file */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}

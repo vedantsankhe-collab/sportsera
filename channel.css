@@ -1,0 +1,61 @@
+/* Add styles for the channel page */
+
+#channel-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#channel-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#channel-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 100px);
+}
+
+#channel-content {
+    width: 70%;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+#channel-list {
+    width: 30%;
+    padding: 20px;
+}
+
+#messaging-bar {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+#message-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-message-btn {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}

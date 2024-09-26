@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* add this to make the body full height */
+    display: flex; /* add this to center the form horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.form-container {
+    background-color: hsla(0, 100%, 2%, 0.952);
+    opacity: .9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(29, 2, 2, 0.5);
+    width: 50%;
+    max-width: 500px;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8cece;
+    border-radius: 5px;
+}
+
+.get-started-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Add some outdoor sports theme styles */
+.form-container {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    background-size: 100% 200px;
+    background-position: 0% 100%;
+    transition: background-position 0.5s ease-out;
+}
+
+.form-container:hover {
+    background-position: 100% 100%;
+}
+
+.get-started-button button[type="submit"] {
+    background-image: url('sports-icon.png');
+    background-size: 20px 20px;
+    background-position: center;
+    padding-left: 30px;
+}
