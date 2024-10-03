@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Lessons</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .lessons {
+            width: 30%;
+            padding: 20px;
+            border-right: 1px solid white;
+        }
+        .lessons h2 {
+            margin-top: 0;
+        }
+        .lesson {
+            padding: 10px;
+            border: 1px solid white;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .video-container {
+            width: 70%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-button {
+            align-self: flex-start;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .video {
+            width: 100%;
+            height: 80%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="lessons">
+        <div class="back-button" onclick="goBack()">← Back</div>
+        <h2>Lessons</h2>
+        <div class="lesson" onclick="playVideo('fundamentalsofcricket.mp4')">01 Basics of Cricket</div>
+        <div class="lesson" onclick="playVideo('strechingandwarmup.mp4')">02 Streching workout</div>
+        <div class="lesson" onclick="playVideo('strengthworkout.mp4')">03 Strength workout</div>
+        <div class="lesson" onclick="playVideo('staminaworkout.mp4')">04 Stamina Workout</div>
+        <div class="lesson" onclick="playVideo('video5.mp4')">05 Basics of Cricket</div>
+        <div class="lesson" onclick="playVideo('video6.mp4')">06 Basics of Cricket</div>
+        <div class="lesson" onclick="playVideo('video7.mp4')">07 Basics of Cricket</div>
+        <div class="lesson" onclick="playVideo('video8.mp4')">08 Basics of Cricket</div>
+        <div class="lesson" onclick="playVideo('video9.mp4')">09 Basics of Cricket</div>
+        <div class="lesson" onclick="playVideo('video10.mp4')">10 Basics of Cricket</div>
+    </div>
+    <div class="video-container">
+        <div class="video" id="video">
+            <video id="videoPlayer" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function playVideo(videoFile) {
+            var videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = videoFile;
+            videoPlayer.play();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
